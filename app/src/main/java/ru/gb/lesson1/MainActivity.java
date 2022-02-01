@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toast.makeText(this, "Sum is: " + (op1 + op2), Toast.LENGTH_SHORT).show();
     }
 
+    private void hello()
+    {
+        Toast.makeText(this, "Hello, world", Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     public void onClick(View view) {
