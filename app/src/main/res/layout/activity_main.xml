@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/hello_world_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#44FF0000"
+            android:gravity="right"
+            android:padding="12dp"
+            android:text="Hello World!"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/press_me_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press me!" />
+
+        <CheckBox
+            android:id="@+id/check_me_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check me!" />
+
+        <!--
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ДВ"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CВ"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="КВ"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="УКВ"/>
+        </RadioGroup>
+        -->
+
+        <!--
+            dp = device independent pixel = 1/160 дюйма
+            sp = scale-independent pixel = dp*scale
+            scale = 1.25
+            mm
+            pc
+            in
+        -->
+        <EditText
+            android:id="@+id/operand1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/operand2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/calc_button_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sum" />
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
